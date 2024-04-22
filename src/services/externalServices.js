@@ -1,5 +1,6 @@
 import axios from "axios";
-const backend_url = "http://localhost:3000/";
+// const backend_url = "http://localhost:3000/";
+const backend_url = "https://yocket-be.vercel.app/"
 
 export const getCities = async () => {
   try {

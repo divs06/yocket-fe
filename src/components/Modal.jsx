@@ -18,7 +18,7 @@ const Modal = ({ isOpen, onClose, children }) => {
         >
             <div
                 style={{
-                    background: "#e5e6df",
+                    background: "#242424",
                     height: 480,
                     width: 640,
                     margin: "auto",

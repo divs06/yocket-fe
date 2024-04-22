@@ -77,6 +77,7 @@ const StartGame = () => {
 
   const handleResultModalClose = () => {
     setOpenResultModal(false);
+    window.location.reload()
   };
 
   const handleStartGame = async (copObj) => {

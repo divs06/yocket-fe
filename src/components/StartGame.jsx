@@ -77,7 +77,6 @@ const StartGame = () => {
 
   const handleResultModalClose = () => {
     setOpenResultModal(false);
-    fetchCityData();
   };
 
   const handleStartGame = async (copObj) => {

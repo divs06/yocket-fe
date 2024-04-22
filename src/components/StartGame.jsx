@@ -148,16 +148,16 @@ const StartGame = () => {
 
       <Modal isOpen={open} onClose={handleModalClose}>
         <>
-          <h2>Select City</h2>
+          <h2 style={{color: '#000000'}}>Select City</h2>
           {cities.map(item => {
             const selectedCitiesAray = extractCurrentlySelectedCities();
             if (!selectedCitiesAray.includes(item.name)) {
-              return <p key={item.name} onClick={() => assignCity(item.name, currentCop)}>{item.name}</p>;
+              return <p style={{color: '#000000'}} key={item.name} onClick={() => assignCity(item.name, currentCop)}>{item.name}</p>;
             }
           })}
 
-          <h2>Assigned Vehicle</h2>
-          <div>
+          <h2 style={{color: '#000000'}}>Assigned Vehicle</h2>
+          <div style={{color: '#000000'}}>
             {selectedVehicle}
           </div>
         </>

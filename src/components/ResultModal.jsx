@@ -18,7 +18,7 @@ const Modal = ({ isOpen, onClose, children }) => {
         >
             <div
                 style={{
-                    background: "#242424",
+                    background: "#f5f8fa",
                     height: 480,
                     width: 640,
                     margin: "auto",
@@ -29,7 +29,7 @@ const Modal = ({ isOpen, onClose, children }) => {
                 }}
             >
                 {children}
-                <button style={{marginTop: 100}} onClick={onClose}>Close</button>
+                <button style={{marginTop: 100,  backgroundColor: 'black', color: '#f5f8fa'}} onClick={onClose}>Close</button>
             </div>
         </div>
     );

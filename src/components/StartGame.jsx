@@ -66,7 +66,6 @@ const StartGame = () => {
   }, []);
 
   const handleCopBtnPress = (copId) => {
-    console.log(copId);
     setCurrentCop(copId);
     setOpen(true);
   };
@@ -78,13 +77,13 @@ const StartGame = () => {
 
   const handleResultModalClose = () => {
     setOpenResultModal(false);
+    fetchCityData();
   };
 
   const handleStartGame = async (copObj) => {
     try {
       setOpenResultModal(true);
       const response = await getStartGameData(copObj);
-      console.log("response", response);
       if (response.success == 1) {
         if (response.isFutgitiveFound == 1) {
           const winnerCop = response.data.find(item => item.isLocated == 1);

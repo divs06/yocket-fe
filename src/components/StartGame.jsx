@@ -170,7 +170,7 @@ const StartGame = () => {
 
       <ResultModal isOpen={openResultModal} onClose={handleResultModalClose}>
         <div>
-          <h1>{resultText}</h1>
+          <h1 style={{color: '#000000'}}>{resultText}</h1>
         </div>
       </ResultModal>
     </div>

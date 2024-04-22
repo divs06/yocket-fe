@@ -132,7 +132,7 @@ const StartGame = () => {
       <div>
         <h2>Select a cop to start the game:</h2>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
-          {copObj.map(item => <button key={item.cop} onClick={() => handleCopBtnPress(item.cop)} style={{backgroundColor: 'black', color:'f5f8fa'}}>Cop: {item.cop}</button>)}
+          {copObj.map(item => <button key={item.cop} onClick={() => handleCopBtnPress(item.cop)} style={{backgroundColor: 'black', color:'#f5f8fa'}}>Cop: {item.cop}</button>)}
         </div>
       </div>
 
@@ -165,7 +165,7 @@ const StartGame = () => {
       </Modal>
 
       <button
-        style={{ marginTop: 50, backgroundColor: 'black', color:'f5f8fa' }}
+        style={{ marginTop: 50, backgroundColor: 'black', color:'#f5f8fa' }}
         disabled={!copObj.every(item => item.city != "" && item.vehicle != "")}
         onClick={() => handleStartGame(copObj)}>Start Game</button>
 
